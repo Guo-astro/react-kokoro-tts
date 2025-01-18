@@ -1,6 +1,15 @@
-# React Component Library Template
+# React Component for Kokoro TTS
 
-A robust and customizable React component library template built with modern tools and best practices. Ideal for developers looking to create reusable UI components with ease.
+[Source code](https://github.com/Guo-astro/react-kokoro-tts)
+
+## Usage
+
+To use the Kokoro TTS component in your React project, follow these steps:
+
+1. Install the package: `pnpm install react-kokoro-tts`
+2. Import the component: `import {KokoroTTS} from 'react-kokoro-tts';`
+
+## Usage
 
 ## 🚀 Features
 
@@ -13,5 +22,3 @@ A robust and customizable React component library template built with modern too
 - **Typescript Support**: Generates properly .d.ts.
 - **Structured Folder Layout**: Organized directory structure for scalability and maintainability.
 - **Example Folder**: Contains example usage of components with a simple setup.
-
-
