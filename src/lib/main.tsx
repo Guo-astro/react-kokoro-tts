@@ -12,8 +12,11 @@ interface Result {
   text: string;
   src: string;
 }
+interface KokoroComponentProps {
+  workerUrl: string;
+}
 
-export function KokoroComponent() {
+export function KokoroComponent({ workerUrl }: KokoroComponentProps) {
   // Create a reference to the worker object.
   const worker = useRef<Worker | null>(null);
 
@@ -34,8 +37,8 @@ export function KokoroComponent() {
 
   useEffect(() => {
     if (!worker.current) {
-      worker.current = new Worker(new URL("./worker.js", import.meta.url), {
-        type: "module",
+      worker.current = new Worker(workerUrl, {
+        type: "module", // adjust if needed based on your worker script
       });
     }
 
